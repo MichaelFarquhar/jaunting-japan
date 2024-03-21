@@ -1,0 +1,21 @@
+---
+import Prefecture from './Prefecture.astro';
+import { Icon } from 'astro-icon/components';
+
+const prefectures = ['Tokyo', 'Osaka', 'Kyoto', 'Nara', 'Hiroshima', 'Yamanashi'];
+---
+
+<section class="w-full flex justify-center items-center">
+    {prefectures.map((prefecture) => <Prefecture prefecture={prefecture} />)}
+</section>
+
+<div class="mt-8 w-full flex justify-center">
+    <a
+        href="/prefectures"
+        class="flex space-x-2 items-center font-['Georama'] uppercase bg-gray-900 font-semibold text-white px-8 py-3 rounded-sm transition-all duration-300 hover:bg-pink-400 hover:rounded-xl"
+        ><span>All Prefectures</span><Icon
+            name="mingcute:arrow-right-fill"
+            class="w-7 h-7"
+        /></a
+    >
+</div>

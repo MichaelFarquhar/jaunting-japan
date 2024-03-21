@@ -1,0 +1,28 @@
+---
+interface Props {
+    prefecture: string;
+}
+
+const { prefecture = 'Hello' } = Astro.props;
+
+// Lowercase version of prefecture name for code
+const tag = prefecture.toLowerCase();
+---
+
+<div
+    class="max-w-[280px] max-h-[373px] relative h-min overflow-hidden group cursor-pointer"
+>
+    <img
+        class="group-hover:scale-105 transition-all duration-300 object-cover"
+        src=`/covers/${tag}.jpg`
+        alt=`Cover image of ${tag}`
+    />
+    <div
+        class="w-full absolute bottom-0 pb-2 pt-6 px-2 flex justify-center bg-gradient-to-t from-black/75 from-30% via-black/60 via-75% to-transparent to-100%"
+    >
+        <span
+            class="font-['Georama'] uppercase text-[2.25vw] font-extrabold transition-all duration-300 text-center text-white group-hover:text-pink-300"
+            >{prefecture}</span
+        >
+    </div>
+</div>
