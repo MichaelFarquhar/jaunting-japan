@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon/components';
+import SidebarSubtitle from './SidebarSubtitle.astro';
+---
+
+<aside class="min-w-[275px] flex flex-col space-y-8">
+    <div class="">
+        <SidebarSubtitle title="Follow Us" />
+        <div class="flex justify-center space-x-4">
+            <div class="border border-slate-300 rounded p-2">
+                <Icon class="w-8 h-8" name="mingcute:social-x-line" />
+            </div>
+            <div class="border border-slate-300 rounded p-2">
+                <Icon class="w-8 h-8" name="mingcute:ins-line" />
+            </div>
+            <div class="border border-slate-300 rounded p-2">
+                <Icon class="w-8 h-8" name="mingcute:facebook-line" />
+            </div>
+        </div>
+    </div>
+</aside>
