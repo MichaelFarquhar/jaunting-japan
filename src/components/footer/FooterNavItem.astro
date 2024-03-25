@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+    title: string;
+    href: string;
+    icon?: string;
+    target?: string;
+}
+
+const { title, icon, href, target = '_blank' } = Astro.props;
+---
+
+<div class="w-fit flex space-x-2 items-center transition text-slate-50 hover:text-pink-300">
+    {!!icon &&
+        <Icon class="w-5 h-5" name=`mingcute:${icon}` />
+    }
+    <a class="font-semibold text-sm" href={href} target={target}>{title}</a>
+</div>

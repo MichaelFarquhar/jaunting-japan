@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Jaunting Japan';
 export const SITE_DESCRIPTION = 'The Best Guides For Traveling Japan';
+export const SITE_URL = 'http://localhost:4321/';
