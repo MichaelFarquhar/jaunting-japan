@@ -3,10 +3,10 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../../consts';
 ---
 
-<header class="bg-[#fbb7dd]">
+<header class="bg-[#fbb7dd] px-8">
     <nav class="bg-transparent">
-        <h2><a href="/">{SITE_TITLE}</a></h2>
-        <div class="internal-links">
+        <img src="/LogoBlack.svg" alt="" />
+        <div class="internal-links text-slate-900">
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/guides">Guides</HeaderLink>
             <HeaderLink href="/itineraries">Itineraries</HeaderLink>
@@ -17,16 +17,6 @@ import { SITE_TITLE } from '../../consts';
     </nav>
 </header>
 <style>
-    header {
-        margin: 0;
-        padding: 0 1em;
-        box-shadow: 0 2px 8px rgba(var(--black), 5%);
-    }
-    h2 {
-        margin: 0;
-        font-size: 1em;
-    }
-
     h2 a,
     h2 a.active {
         text-decoration: none;
